@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kat"
+version = "0.1.0"
+description = "Knowledgement Assesment Tool"
+authors = ["valeriu-pirtac <valeriu.pirtac@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "kat", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+omegaconf = "2.3.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
